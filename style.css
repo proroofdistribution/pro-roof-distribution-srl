@@ -193,8 +193,9 @@ box-shadow:0 5px 15px rgba(0,0,0,0.15);
 transform:scale(1.03);
 }
 .logo{
-    display:block;
-    width:320px;
-    max-width:90%;
-    margin:0 auto;
+display:block;
+width:460px;
+max-width:95%;
+margin:20px auto 10px;
+}
 }
