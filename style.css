@@ -161,3 +161,20 @@ border:none;
 cursor:pointer;
 width:100%;
 }
+form{
+display:flex;
+flex-direction:column;
+gap:15px;
+}
+
+form input,
+form textarea,
+form button{
+width:100%;
+display:block;
+box-sizing:border-box;
+}
+
+form button{
+margin-top:10px;
+}
