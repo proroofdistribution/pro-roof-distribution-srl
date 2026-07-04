@@ -192,9 +192,9 @@ box-shadow:0 5px 15px rgba(0,0,0,0.15);
 .gallery img:hover{
 transform:scale(1.03);
 }
-.logo {
-    display: block;
-    width: 260px;
-    max-width: 90%;
-    margin: 0 auto 20px;
+.logo{
+    display:block;
+    width:320px;
+    max-width:90%;
+    margin:0 auto;
 }
