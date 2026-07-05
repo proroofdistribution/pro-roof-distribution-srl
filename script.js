@@ -33,3 +33,27 @@ document.getElementById("jgheab").innerHTML = jgheab;
 document.getElementById("rezultatCalculator").style.display = "block";
 
 }
+const grosimi = {
+    "Britanic": "0,45 până la 0,6 mm",
+    "Iberic": "0,45 până la 0,6 mm",
+    "Clasic": "0,4 până la 0,6 mm",
+    "Gotic": "0,45 până la 0,6 mm",
+    "Balcanic": "0,45 până la 0,6 mm",
+    "Adriatic": "0,45 până la 0,6 mm",
+    "Romanic": "0,5 până la 0,6 mm",
+    "Hellenic": "0,45 până la 0,6 mm",
+    "Retro Duo": "0,45 până la 0,7 mm",
+    "Retro Panel": "0,45 până la 0,6 mm"
+};
+
+function actualizeazaGrosime() {
+    let model = document.getElementById("modelBilka").value;
+
+    if (model === "") {
+        document.getElementById("grosimeBilka").innerHTML = "";
+        return;
+    }
+
+    document.getElementById("grosimeBilka").innerHTML =
+        "Grosime nominală: <strong>" + grosimi[model] + "</strong>";
+}
