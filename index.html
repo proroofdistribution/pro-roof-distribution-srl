@@ -118,12 +118,27 @@ măsurători și montaj.
 
 <p id="grosimeBilka" style="margin-top:10px;font-weight:bold;color:#c62828;"></p>
 
+<label>Grosime tablă</label>
+
+<select id="grosime">
+    <option value="0.4">0,4 mm</option>
+    <option value="0.5">0,5 mm</option>
+    <option value="0.6">0,6 mm</option>
+</select>
+
 <label>Finisaj</label>
 
-<select id="finisaj">
-    <option>Lucios</option>
-    <option>Mat</option>
-    <option>GrandeMat</option>
+<select id="finisaj" onchange="actualizeazaCulori()">
+    <option value="">Alege finisajul</option>
+    <option value="Lucios">Lucios</option>
+    <option value="Mat">Mat</option>
+    <option value="GrandeMat">GrandeMat</option>
+</select>
+
+<label>Culoare RAL</label>
+
+<select id="culoareRal">
+    <option>Alege finisajul mai întâi</option>
 </select>
 <button class="btn" onclick="calculeazaAcoperis()">
 Calculează
