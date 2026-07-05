@@ -45,7 +45,6 @@ const grosimi = {
     "Retro Duo": "0,45 până la 0,7 mm",
     "Retro Panel": "0,45 până la 0,6 mm"
 };
-
 function actualizeazaGrosime() {
     let model = document.getElementById("modelBilka").value;
 
@@ -57,3 +56,4 @@ function actualizeazaGrosime() {
     document.getElementById("grosimeBilka").innerHTML =
         "Grosime nominală: <strong>" + grosimi[model] + "</strong>";
 }
+
