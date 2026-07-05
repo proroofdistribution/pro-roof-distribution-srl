@@ -75,6 +75,69 @@ măsurători și montaj.
 
 <div class="container">
 
+<h2>📐 Calculator estimativ acoperiș</h2>
+
+<p>Completează datele de mai jos pentru a afla suprafața estimativă a acoperișului și necesarul aproximativ de materiale.</p>
+
+<div class="calculator">
+
+<label>Lungimea casei (m)</label>
+<input type="number" id="lungime" placeholder="Ex: 12">
+
+<label>Lățimea casei (m)</label>
+<input type="number" id="latime" placeholder="Ex: 9">
+
+<label>Tip acoperiș</label>
+<select id="tipAcoperis">
+<option value="1.15">Două ape</option>
+<option value="1.25">Patru ape</option>
+<option value="1.35">Acoperiș complex</option>
+</select>
+
+<label>Pantă</label>
+<select id="panta">
+<option value="1.00">Sub 20°</option>
+<option value="1.05">20° - 35°</option>
+<option value="1.10">Peste 35°</option>
+</select>
+
+<button class="btn" onclick="calculeazaAcoperis()">
+Calculează
+</button>
+
+<div id="rezultatCalculator" class="rezultat-calculator" style="display:none;">
+
+<h3>Rezultat estimativ</h3>
+
+<p><strong>Suprafață acoperiș:</strong> <span id="suprafata"></span> mp</p>
+
+<p><strong>Necesar tablă:</strong> <span id="tabla"></span> mp</p>
+
+<p><strong>Pierderi tehnologice:</strong> <span id="pierderi"></span> mp</p>
+
+<p><strong>Coamă estimată:</strong> <span id="coama"></span> m</p>
+
+<p><strong>Jgheab estimat:</strong> <span id="jgheab"></span> m</p>
+
+<p style="color:#c62828;font-weight:bold;">
+Rezultatul este orientativ. Pentru o ofertă exactă beneficiați de măsurători gratuite.
+</p>
+
+<a class="btn" href="#contact">
+Solicită ofertă gratuită
+</a>
+
+</div>
+
+</div>
+
+</div>
+
+</section>    
+<section>
+
+<div class="container">
+
 <h2>Modele disponibile</h2>
 
 <img src="IMG_6233.jpeg" alt="Modele BILKA" style="width:100%;border-radius:12px;">
