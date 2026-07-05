@@ -267,3 +267,17 @@ margin-bottom:15px;
 color:#c62828;
 font-size:18px;
 }
+.stars{
+color:#FFD700;
+font-size:30px;
+letter-spacing:4px;
+margin-bottom:15px;
+}
+
+.review strong{
+display:block;
+margin-top:15px;
+color:#c62828;
+font-size:18px;
+font-weight:bold;
+}
