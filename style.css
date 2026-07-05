@@ -351,18 +351,22 @@ grid-template-columns:1fr;
 display:flex;
 align-items:center;
 justify-content:center;
-gap:12px;
-width:260px;
+gap:14px;
+width:280px;
 padding:18px;
-margin:15px auto;
-border-radius:12px;
+margin:18px auto;
+border-radius:16px;
 text-decoration:none;
-font-size:22px;
+font-size:24px;
 font-weight:bold;
 color:#fff;
-transition:.3s;
+transition:all .3s ease;
+box-shadow:0 12px 30px rgba(0,0,0,.20);
 }
-
+.social-btn:hover{
+transform:translateY(-4px) scale(1.03);
+box-shadow:0 20px 40px rgba(0,0,0,.30);
+}
 .social-btn i{
 font-size:28px;
 }
