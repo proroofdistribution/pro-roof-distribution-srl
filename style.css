@@ -372,7 +372,7 @@ font-size:34px;
 }
 
 .facebook{
-background:#1877F2;
+background:linear-gradient(135deg,#1877F2,#0D5FD8);
 }
 
 .facebook:hover{
