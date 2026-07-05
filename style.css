@@ -251,7 +251,14 @@ border-radius:22px;
 box-shadow:0 15px 35px rgba(0,0,0,.12);
 text-align:center;
 }
+.review{
+transition:0.3s;
+}
 
+.review:hover{
+transform:translateY(-6px);
+box-shadow:0 20px 40px rgba(0,0,0,.18);
+}
 .review .stars{
 color:#f5b301;
 font-size:28px;
@@ -269,9 +276,9 @@ font-size:18px;
 }
 .stars{
 color:#FFD700;
-font-size:34px;
-letter-spacing:5px;
-margin-bottom:10px;
+font-size:36px;
+letter-spacing:3px;
+margin-bottom:8px;
 }
 .review strong{
 display:block;
