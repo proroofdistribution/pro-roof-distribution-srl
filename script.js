@@ -1,6 +1,6 @@
 function openImage(src){
     document.getElementById("imageModal").style.display="flex";
-    document.getElementById("modalImg").src=src;
+    document.getElementById("modalImage").src = src;
 }
 
 function closeImage(){
