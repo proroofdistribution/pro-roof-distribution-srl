@@ -100,7 +100,31 @@ măsurători și montaj.
 <option value="1.05">20° - 35°</option>
 <option value="1.10">Peste 35°</option>
 </select>
+<label>Model BILKA</label>
 
+<select id="modelBilka" onchange="actualizeazaGrosime()">
+    <option value="">Alege modelul</option>
+    <option value="Britanic">Britanic</option>
+    <option value="Iberic">Iberic</option>
+    <option value="Clasic">Clasic</option>
+    <option value="Gotic">Gotic</option>
+    <option value="Balcanic">Balcanic</option>
+    <option value="Adriatic">Adriatic</option>
+    <option value="Romanic">Romanic</option>
+    <option value="Hellenic">Hellenic</option>
+    <option value="Retro Duo">Retro Duo</option>
+    <option value="Retro Panel">Retro Panel</option>
+</select>
+
+<p id="grosimeBilka" style="margin-top:10px;font-weight:bold;color:#c62828;"></p>
+
+<label>Finisaj</label>
+
+<select id="finisaj">
+    <option>Lucios</option>
+    <option>Mat</option>
+    <option>GrandeMat</option>
+</select>
 <button class="btn" onclick="calculeazaAcoperis()">
 Calculează
 </button>
