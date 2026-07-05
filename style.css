@@ -216,3 +216,24 @@ transform:scale(1.03);
     max-width:98%;
     margin:0 auto 10px;
 }
+.benefits{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:20px;
+margin-top:30px;
+}
+
+.benefit{
+background:#fff;
+padding:20px;
+border-radius:15px;
+font-size:22px;
+font-weight:bold;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.12);
+transition:.3s;
+}
+
+.benefit:hover{
+transform:translateY(-5px);
+}
