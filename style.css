@@ -310,3 +310,40 @@ margin:15px 0;
     max-height: 95%;
     border-radius: 10px;
 }
+.avantaje{
+display:grid;
+grid-template-columns:repeat(2,1fr);
+gap:12px;
+margin-top:25px;
+}
+
+.avantaj{
+background:#fff;
+padding:16px;
+border-radius:14px;
+text-align:center;
+box-shadow:0 8px 20px rgba(0,0,0,.08);
+font-weight:700;
+color:#222;
+}
+
+.avantaj i{
+display:block;
+font-size:28px;
+color:#c62828;
+margin-bottom:10px;
+}
+
+.avantaj span{
+display:block;
+font-size:15px;
+line-height:1.4;
+}
+
+@media(max-width:600px){
+
+.avantaje{
+grid-template-columns:1fr;
+}
+
+}
