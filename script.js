@@ -33,33 +33,53 @@ document.getElementById("jgheab").innerHTML = jgheab;
 document.getElementById("rezultatCalculator").style.display = "block";
 
 }
-const grosimi = {
-    "Britanic": "0,45 până la 0,6 mm",
-    "Iberic": "0,45 până la 0,6 mm",
-    "Clasic": "0,4 până la 0,6 mm",
-    "Gotic": "0,45 până la 0,6 mm",
-    "Balcanic": "0,45 până la 0,6 mm",
-    "Adriatic": "0,45 până la 0,6 mm",
-    "Romanic": "0,5 până la 0,6 mm",
-    "Hellenic": "0,45 până la 0,6 mm",
-    "Retro Duo": "0,45 până la 0,7 mm",
-    "Retro Panel": "0,45 până la 0,6 mm"
-};
-function actualizeazaGrosime() {
-    let model = document.getElementById("modelBilka").value;
+const modele = {
 
-    if (model === "") {
-        document.getElementById("grosimeBilka").innerHTML = "";
-        return;
-    }
+Britanic:{
+grosimi:["0,45 mm","0,50 mm","0,60 mm"]
+},
 
-    document.getElementById("grosimeBilka").innerHTML =
-        "Grosime nominală: <strong>" + grosimi[model] + "</strong>";
+Clasic:{
+grosimi:["0,40 mm","0,50 mm","0,60 mm"]
+},
+
+Iberic:{
+grosimi:["0,45 mm","0,50 mm","0,60 mm"]
+},
+
+Adriatic:{
+grosimi:["0,45 mm","0,50 mm","0,60 mm"]
+},
+
+Balcanic:{
+grosimi:["0,45 mm","0,50 mm","0,60 mm"]
+},
+
+Gotic:{
+grosimi:["0,45 mm","0,50 mm","0,60 mm"]
+},
+
+Romanic:{
+grosimi:["0,50 mm","0,60 mm"]
+},
+
+Hellenic:{
+grosimi:["0,45 mm","0,50 mm","0,60 mm"]
+},
+
+"Retro Duo":{
+grosimi:["0,45 mm","0,50 mm","0,60 mm","0,70 mm"]
+},
+
+"Retro Panel":{
+grosimi:["0,45 mm","0,50 mm","0,60 mm"]
 }
 
-const culori = {
+};
 
-Lucios: [
+const culori={
+
+Lucios:[
 "RAL 3000 Roșu aprins",
 "RAL 3005 Vișiniu",
 "RAL 3009 Roșu maroniu",
@@ -76,7 +96,7 @@ Lucios: [
 "RAL 9006 Argintiu"
 ],
 
-Mat: [
+Mat:[
 "RAL 3005 Vișiniu mat",
 "RAL 3009 Roșu maroniu mat",
 "RAL 6005 Verde mat",
@@ -89,7 +109,7 @@ Mat: [
 "RAL 9005 Negru mat"
 ],
 
-GrandeMat: [
+GrandeMat:[
 "RAL 3005 Vișiniu GrandeMat",
 "RAL 3009 Roșu maroniu GrandeMat",
 "RAL 6020 Verde GrandeMat",
@@ -103,23 +123,60 @@ GrandeMat: [
 
 };
 
+function actualizeazaGrosime(){
+
+let model=document.getElementById("modelBilka").value;
+
+document.getElementById("grosimeBilka").innerHTML="";
+
+let lista=document.getElementById("grosime");
+
+lista.innerHTML="";
+
+if(model===""){
+
+lista.innerHTML="<option>Alege modelul mai întâi</option>";
+return;
+
+}
+
+modele[model].grosimi.forEach(function(g){
+
+let opt=document.createElement("option");
+
+opt.value=g;
+
+opt.text=g;
+
+lista.appendChild(opt);
+
+});
+
+}
+
 function actualizeazaCulori(){
 
 let finisaj=document.getElementById("finisaj").value;
+
 let lista=document.getElementById("culoareRal");
 
 lista.innerHTML="";
 
 if(finisaj===""){
+
 lista.innerHTML="<option>Alege finisajul mai întâi</option>";
+
 return;
+
 }
 
-culori[finisaj].forEach(function(culoare){
+culori[finisaj].forEach(function(c){
 
 let opt=document.createElement("option");
-opt.value=culoare;
-opt.text=culoare;
+
+opt.value=c;
+
+opt.text=c;
 
 lista.appendChild(opt);
 
