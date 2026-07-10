@@ -1,1 +1,5 @@
 
+User-agent: *
+Allow: /
+
+Sitemap: https://proroofdistribution.github.io/pro-roof-distribution-srl/sitemap.xml
