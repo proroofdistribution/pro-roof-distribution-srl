@@ -509,3 +509,68 @@ font-size:24px;
 }
 
 }
+.navbar{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:#ffffff;
+box-shadow:0 2px 10px rgba(0,0,0,.1);
+z-index:1000;
+}
+
+.navbar .container{
+display:flex;
+justify-content:space-between;
+align-items:center;
+padding:15px 20px;
+}
+
+.logo-nav{
+font-size:24px;
+font-weight:700;
+color:#c8102e;
+text-decoration:none;
+}
+
+.nav-links{
+display:flex;
+list-style:none;
+gap:25px;
+margin:0;
+padding:0;
+}
+
+.nav-links a{
+text-decoration:none;
+color:#222;
+font-weight:600;
+transition:.3s;
+}
+
+.nav-links a:hover{
+color:#c8102e;
+}
+
+.hero{
+padding-top:90px;
+}
+
+@media(max-width:768px){
+
+.navbar .container{
+flex-direction:column;
+gap:10px;
+}
+
+.nav-links{
+flex-wrap:wrap;
+justify-content:center;
+gap:15px;
+}
+
+.logo-nav{
+font-size:20px;
+}
+
+}
