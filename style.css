@@ -597,10 +597,17 @@ background:#ffffff;
 padding:15px;
 border-radius:10px;
 box-shadow:0 5px 20px rgba(0,0,0,.2);
+ opacity:0;
+transform:translateX(30px);
+transition:all .35s ease;
+pointer-events:none; 
 }
 
 .nav-links.active{
-display:flex;
+  display:flex;
+  opacity:1;
+  transform:translateX(0);
+  pointer-events:auto;
 }
 
 .nav-links li{
