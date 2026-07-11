@@ -1,0 +1,16 @@
+{
+  "name": "PRO ROOF DISTRIBUTION SRL",
+  "short_name": "PRO ROOF",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#c8102e",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "C955B9F8-C1FF-4527-B5A2-00E8C9E2A4A8.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}
