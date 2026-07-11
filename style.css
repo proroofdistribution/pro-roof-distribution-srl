@@ -588,7 +588,7 @@ cursor:pointer;
 }
 
 .nav-links{
-display:none;
+display:flex;
 flex-direction:column;
 position:absolute;
 top:70px;
@@ -598,6 +598,7 @@ padding:15px;
 border-radius:10px;
 box-shadow:0 5px 20px rgba(0,0,0,.2);
  opacity:0;
+ visibility:hidden;
 transform:translateX(30px);
 transition:all .35s ease;
 pointer-events:none; 
@@ -606,6 +607,7 @@ pointer-events:none;
 .nav-links.active{
   display:flex;
   opacity:1;
+ visibility:visible;
   transform:translateX(0);
   pointer-events:auto;
 }
