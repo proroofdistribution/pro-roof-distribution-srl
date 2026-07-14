@@ -817,7 +817,7 @@ value="Cerere nouă PRO ROOF DISTRIBUTION">
 <input
 type="hidden"
 name="redirect"
-value="https://proroofdistribution.ro">
+value="https://proroofdistribution.ro/?trimis=1">
 
 <button
 class="btn"
@@ -966,6 +966,11 @@ behavior:"smooth"
 
 }
 </script>
+<script>
+if (window.location.search.includes("trimis=1")) {
+  alert("Cererea a fost trimisă cu succes! Vă vom contacta în cel mai scurt timp.");
+}
+</script>  
 </body>
 
 </html>
