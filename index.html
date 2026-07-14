@@ -942,6 +942,30 @@ document.querySelectorAll("#menu a").forEach(link => {
     });
 });
 </script>
+  <script>
+function completeazaOferta(){
+
+const text = `Solicită ofertă pentru:
+
+Model: ${document.getElementById("modelBilka").value}
+Grosime: ${document.getElementById("grosime").value}
+Finisaj: ${document.getElementById("finisaj").value}
+Culoare: ${document.getElementById("culoareRal").value}
+
+Suprafață estimată: ${document.getElementById("suprafata").textContent} mp
+Necesar tablă: ${document.getElementById("tabla").textContent} mp
+Pierderi: ${document.getElementById("pierderi").textContent} mp
+Coamă: ${document.getElementById("coama").textContent} m
+Jgheab: ${document.getElementById("jgheab").textContent} m`;
+
+document.getElementById("detalii").value = text;
+
+document.getElementById("formular").scrollIntoView({
+behavior:"smooth"
+});
+
+}
+</script>
 </body>
 
 </html>
